@@ -1,0 +1,15 @@
+server:
+  port: 9000
+spring:
+  cloud:
+    config:
+      server:
+        git: 
+          uri: https://github.com/Neptune212/microservices-using-spring-boot-and-spring-cloud
+          searchPaths: rs-mortgage-customer-service
+          username: <Your username>
+          password: <Your password>
+          
+          #uri is url to github repo
+          #searchPaths is the folder inside above repo.This folder represents one spring cloud config service
+          #searchPaths
